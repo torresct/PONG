@@ -10,8 +10,6 @@ class Ball:
         self.paddle1 = paddle1
         self.id = canvas.create_oval(10, 10, 25, 25, fill=color)
         self.canvas.move(self.id, 232, 178)
-        starts = [-6, -4, -2, 2, 4, 6]
-        random.shuffle(starts)
         self.x = 0
         self.y = 0
         self.hit_left = False
@@ -129,7 +127,7 @@ class Paddle1:
 
 
 tk = Tk()
-tk.title("Trocito de mierda <3")
+tk.title("PONG")
 canvas = Canvas(tk, width=500, height=400, bd=0, bg='black')
 canvas.pack()
 label = canvas.create_text(200, 30, text="0", fill="white", font=("Default", 40))
